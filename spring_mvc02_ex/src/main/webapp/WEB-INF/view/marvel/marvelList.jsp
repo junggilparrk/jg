@@ -14,15 +14,15 @@ table {
 	margin: 50px auto;
 }
 tr{border: 1px solid black; text-align: center;}
-th{border: 1px solid black; text-align: center;}
+th{background:#808080;color:white; border: 1px solid black; text-align: center;}
 td{border: 1px solid black; text-align: center;}
 .title{width: 300px;}
 .release_date{width: 150px;}
 .world{width: 200px;}
-.write{width: 200px;}
+.write{width: 200px;} 
 .update{width: 200px;}
-li{color: black; line-height: 50px; text-align: center; width: 24.8%; height:50px; float: left; list-style: none;border: 1px solid black; font-size: 2em;}
-ul{text-align: center; background: #eeeeee;}
+li{color: white; line-height: 50px; text-align: center; width: 24.8%; height:50px; float: left; list-style: none;border: 1px solid #eeeeee; font-size: 2em;}
+ul{text-align: center; background: #cc0000;}
 ul::after {
 	content: ""; clear: both; display:block; 
 }
@@ -71,7 +71,7 @@ a{text-decoration: none; color: black;}
 	</c:if>
 		<tr>
 			<td>${m.marvelId }</td>
-			<td><span>${m.title }</span><br><span>${m.titleEng }</span></td>
+			<td><a href="/marvel/content?marvelId=${m.marvelId }"><span>${m.title }</span><br><span>${m.titleEng }</span></a></td>
 			<td>${m.releaseDate }</td>
 			<td>${m.worldBoxOffice }</td>
 			<td>${wd}</td>

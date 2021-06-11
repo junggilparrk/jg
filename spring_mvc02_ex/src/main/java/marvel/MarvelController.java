@@ -76,12 +76,22 @@ public class MarvelController {
 		return "delete";
 	}
 	@GetMapping("/deleteUpdate")
-	public String marvelDelete(Model model,int marvelId,String page) {
+	public String marvelDelete(Model model,int marvelId) {
+		model.addAttribute("marvelId", marvelId);
+		return "result"; 
+	}
+	@GetMapping("/result")
+	public String result(Model model,int marvelId,String page) {
 		ms.delete(marvelId);
 		if(page==null) {
 			page="1";
 		}
 		model.addAttribute("list",ms.MarvelService(Integer.parseInt(page)));
 		return "marvelList"; 
+	}
+	@GetMapping("/content")
+	public String content(Model model, int marvelId) {
+		model.addAttribute("movie", ms.selectMovieWithMarvelId(marvelId));
+		return "content";
 	}
 }

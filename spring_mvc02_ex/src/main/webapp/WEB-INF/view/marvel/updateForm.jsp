@@ -9,7 +9,6 @@
 <title>Insert title here</title>
 <style type="text/css">
 *{margin: 0; padding: 0;}
-body{background-image: url("/marvel.JPG");}
 table {
 	border-collapse: collapse;
 	margin: 50px auto;

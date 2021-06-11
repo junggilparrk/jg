@@ -33,4 +33,7 @@ public interface MarvelMapper {
 	public int selectCount();
 	@Select("select * from marvle order by marvel_id desc limit #{firstRow},#{countPerPage}")
 	public List<Marvel> selectSomething(@Param("firstRow") int firstRow,@Param("countPerPage") int countPerPage); 
+	
+	@Select("select * from movie where id=#{marvelId}")
+	public Movie selectWithMarvelId(int marvelId);
 }

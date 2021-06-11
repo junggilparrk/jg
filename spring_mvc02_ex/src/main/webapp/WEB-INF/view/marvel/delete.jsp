@@ -21,8 +21,8 @@ td{border: 1px solid black; text-align: center;}
 .world{width: 200px;}
 .write{width: 200px;}
 .update{width: 200px;}
-li{color: black; line-height: 50px; text-align: center; width: 24.8%; height:50px; float: left; list-style: none;border: 1px solid black; font-size: 2em;}
-ul{text-align: center; background: #eeeeee;}
+li{color: white; line-height: 50px; text-align: center; width: 24.8%; height:50px; float: left; list-style: none;border: 1px solid #eeeeee; font-size: 2em;}
+ul{text-align: center; background: #cc0000;}
 ul::after {
 	content: ""; clear: both; display:block; 
 }
@@ -88,13 +88,6 @@ a{text-decoration: none; color: black;}
 		</span>
 </c:if>
 
-	<script type="text/javascript">
-	var spanArr=document.querySelectorAll("span");
-	console.log(spanArr);
-	aArr.onclick=function(){
-		alert("영화 리스트가 삭제되었습니다.");
-	}
-</script>	
 
 </body>
 </html>

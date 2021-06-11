@@ -34,4 +34,7 @@ public class MarvelService {
 		sc.setMarvelList(list);
 		return sc;
 	}
+	public Movie selectMovieWithMarvelId(int marvelId) {
+		return mm.selectWithMarvelId(marvelId);
+	}
 }

@@ -7,7 +7,6 @@
 <title>marvelWrite.jsp</title>
 <style type="text/css">
 *{margin: 0; padding: 0;}
-body{background-image: url("/marvel.JPG");}
 table {
 	border-collapse: collapse;
 	margin: 50px auto;
@@ -21,8 +20,8 @@ td{border: 1px solid black; text-align: center; width:400px; height: 100px;}
 .write{width: 200px;}
 .update{width: 200px;}
 .t{width: 350px;height: 30px;}
-li{color: black; line-height: 50px; text-align: center; width: 24.8%; height:50px; float: left; list-style: none;border: 1px solid black; font-size: 2em;}
-ul{text-align: center; background: #eeeeee;}
+li{color: white; line-height: 50px; text-align: center; width: 24.8%; height:50px; float: left; list-style: none;border: 1px solid #eeeeee; font-size: 2em;}
+ul{text-align: center; background: #cc0000;}
 ul::after {
 	content: ""; clear: both; display:block; 
 }
